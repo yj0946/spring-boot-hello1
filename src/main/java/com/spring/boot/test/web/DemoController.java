@@ -16,4 +16,9 @@ public class DemoController {
         demo.setAddress("广东省东莞市大岭山");
         return demo;
     }
+
+    @RequestMapping("/zeroException")
+    public int zeroException(){
+        return 100/0;
+    }
 }
