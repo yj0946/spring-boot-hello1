@@ -1,11 +1,17 @@
 package com.spring.boot.test.bean;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 /**
  * 测试实体类.
  * @author Administrator
  *
  */
+@Entity
 public class Demo {
+    @Id @GeneratedValue
     private long id;
     private String name;
     private int age;
