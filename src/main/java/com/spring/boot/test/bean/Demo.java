@@ -3,6 +3,7 @@ package com.spring.boot.test.bean;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * 测试实体类.
@@ -10,6 +11,7 @@ import javax.persistence.Id;
  *
  */
 @Entity
+@Table(name ="Demo", schema = "ical_calendar")
 public class Demo {
     @Id @GeneratedValue
     private long id;
