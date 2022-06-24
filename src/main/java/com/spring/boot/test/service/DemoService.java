@@ -20,5 +20,11 @@ public class DemoService {
     @Transactional // 自动事务托管
     public void save(Demo demo) {
         demoRepository.save(demo);
+        //模拟事务异常回滚
+        //zeroException();
+    }
+
+    public int zeroException(){
+        return 100/0;
     }
 }
